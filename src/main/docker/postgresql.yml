@@ -1,0 +1,11 @@
+version: '2'
+services:
+    servicewizard-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/ServiceWizard/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=ServiceWizard
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
